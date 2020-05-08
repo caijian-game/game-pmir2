@@ -1,0 +1,1 @@
+ps aux|grep -v "grep"|grep "php bin/hyperf.php start"|awk '{print $1}'|xargs kill -9

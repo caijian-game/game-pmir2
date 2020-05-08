@@ -13,13 +13,13 @@ declare (strict_types = 1);
 return [
     'default' => [
         'driver'    => env('DB_DRIVER', 'mysql'),
-        'host'      => env('DB_HOST', 'localhost'),
+        'host'      => env('DB_HOST', 'mysql'),
 
         'read'      => [
-            'host' => [env('DB_READ_HOST', '127.0.0.1')],
+            'host' => [env('DB_READ_HOST', 'mysql')],
         ],
         'write'     => [
-            'host' => [env('DB_WRITE_HOST', '127.0.0.1')],
+            'host' => [env('DB_WRITE_HOST', 'mysql')],
         ],
 
         'database'  => env('DB_DATABASE', 'hyperf'),
